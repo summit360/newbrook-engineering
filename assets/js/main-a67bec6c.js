@@ -1,0 +1,1 @@
+$(window).scroll(function(){var t=$(window).scrollTop();$(".section").each(function(){var e=$(this).offset().top-$("#header").outerHeight();t>=e&&$(this).addClass("loaded")})}),$("#navigation").singlePageNav({offset:$("#header").outerHeight(),filter:":not(.external)",speed:750,currentClass:"active",beforeStart:function(){},onComplete:function(){}});

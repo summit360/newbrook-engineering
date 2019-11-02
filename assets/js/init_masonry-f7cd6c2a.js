@@ -1,0 +1,1 @@
+$(document).ready(function(){var t=$(".grid");t.imagesLoaded(function(){t.masonry({itemSelector:".grid-item",columnWidth:".grid-item",transitionDuration:0})})});
