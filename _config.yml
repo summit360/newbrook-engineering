@@ -1,0 +1,24 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+title: "Newbrook Engineering" # the name of your site, e.g. ACME Corp.
+lang: "en"
+
+plugins:
+  - jekyll-postcss
+  - jekyll-purgecss
+
+css_dir: "assets/css" # defaults to "css"
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+
+exclude:
+  - node_modules/
+  - yarn.lock
+  - postcss.config.js
+  - tailwind.config.js
+  - purgecss.config.js
+  - package.json

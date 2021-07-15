@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  </head>
+  <body>
+    <div class="bg-white">
+      <header>
+        <div class="relative bg-white">
+          <div class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
+            <div class="flex justify-start lg:w-0 lg:flex-1">
+              <a href="/">
+                <span class="sr-only">Newbrook Engineering</span>
+                <img class="h-8 w-auto sm:h-10" src="/assets/img/ne-logo.jpg" alt="Newbrook Engineering Logo">
+              </a>
+            </div>
+
+            <nav class="hidden md:flex space-x-10">
+              <a href="tel:+441270584836" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                <div class="flex">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" class="inline-block h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                  </svg>
+                  <div>
+                    01270 584836
+                  </div>
+                </div>
+              </a>
+              <a href="mailto:newbrook.eng@gmail.com" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                <div class="flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a3 3 0 01-4.8 2.401A4 4 0 1114 10a1 1 0 102 0c0-1.537-.586-3.07-1.757-4.243zM12 10a2 2 0 10-4 0 2 2 0 004 0z" clip-rule="evenodd" />
+                  </svg>
+                  <div>
+                    newbrook.eng@gmail.com
+                  </div>
+                </div>
+              </a>
+            </nav>
+          </div>
+
+          <!--
+            Mobile menu, show/hide based on mobile menu state.
+
+            Entering: "duration-200 ease-out"
+              From: "opacity-0 scale-95"
+              To: "opacity-100 scale-100"
+            Leaving: "duration-100 ease-in"
+              From: "opacity-100 scale-100"
+              To: "opacity-0 scale-95"
+          -->
+          <div class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+            <div class=" bg-white divide-y-2 divide-gray-50">
+              <div class="pt-5 pb-6 px-5">
+                <div class="flex items-center justify-between flex-column">
+                  <div>
+                    <img class="h-8 w-auto" src="/assets/img/ne-logo.jpg" alt="Newbrook Engineering Logo">
+                  </div>
+                  <!-- replace with CTA phone -->
+                  <div class="text-base font-medium">Newbrook Engineering</div>
+                  <a href="tel:+441270584836" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                    </svg>
+                  </a>
+                  <a href="mailto:newbrook.eng@gmail.com" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a3 3 0 01-4.8 2.401A4 4 0 1114 10a1 1 0 102 0c0-1.537-.586-3.07-1.757-4.243zM12 10a2 2 0 10-4 0 2 2 0 004 0z" clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        {{ content }}
+      </main>
+    </div>
+    <!-- Footer section -->
+    <footer class="mt-24 bg-gray-900 sm:mt-12">
+      <div class="mx-auto max-w-md py-12 px-4 overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+        <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+          <div class="px-5 py-2">
+            <a href="/" class="text-base text-gray-400 hover:text-gray-300">
+              Home
+            </a>
+          </div>
+          <div class="px-5 py-2">
+            <a href="/contact-us" class="text-base text-gray-400 hover:text-gray-300">
+              Contact Us
+            </a>
+          </div>
+
+          <div class="px-5 py-2">
+            <a href="/privacy-policy.pdf" class="text-base text-gray-400 hover:text-gray-300">
+              Privacy Policy
+            </a>
+          </div>
+        </nav>
+
+        <p class="mt-8 text-center text-base text-gray-400">
+          &copy; 2021 Newbrook Engineering. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
